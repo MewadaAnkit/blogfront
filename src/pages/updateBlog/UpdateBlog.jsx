@@ -54,7 +54,7 @@ const UpdateBlog = () => {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${token}`
     }
-      await request(`/blog/updateBlog/${id}`, "PUT", options, {title, desc, category})
+      await request(`/blog/updateBlog/${id}`, "PUT",  {headersw:options }, {title, desc, category})
       navigate(`/blogDetails/${id}`)
     } catch (error) {
       console.error(error)

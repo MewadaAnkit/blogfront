@@ -22,7 +22,7 @@ function App() {
         <Route path='/create' element={user ? <Create /> : <Navigate to='/login' />} />
         <Route path='/blogDetails/:id' element={user ? <BlogDetails /> : <Navigate to='/login' />} />
        <Route path='/updateBlog/:id' element={user ? <UpdateBlog /> : <Navigate to='/login' />} />
-       <Route path='/forum' element={user ? <Community/> : <Navigate to='/login' />} />
+       <Route path='/forum' element={<Community/>} />
       </Routes>
     </div>
   );
