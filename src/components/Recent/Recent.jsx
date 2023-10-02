@@ -11,7 +11,7 @@ const Recent = () => {
 
   useEffect(() => {
     // Fetch featured blogs from your backend endpoint
-    fetch('http://localhost:5000/blog/recent')
+    fetch('https://backendforblog-vdq1.onrender.com/blog/recent')
       .then((response) => response.json())
       .then((data) => {
          
@@ -31,7 +31,7 @@ const Recent = () => {
             {featuredBlogs.map((blog) => (
               <div key={blog._id} className={classes.mainBlog}>
                 <Link to={`/blogDetails/${blog?._id}`}>                
-                <img src={`http://localhost:5000/images/${blog?.photo}`} alt={blog.title} />
+                <img src={`https://backendforblog-vdq1.onrender.com/images/${blog?.photo}`} alt={blog.title} />
                 </Link> 
                 <div className={classes.mainBlogData}>
                   <div className={classes.categoryAndMetadata}>

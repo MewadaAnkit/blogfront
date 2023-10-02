@@ -31,8 +31,8 @@ const UpdateBlog = () => {
   useEffect(() => {
     const fetchBlogDetails = async () => {
       try {
-        const options = {'Authorization': `Bearer ${token}`}
-        const data = await request(`/blog/find/${id}`, 'GET', options)
+        const options = {'authorization': `Bearer ${token}`}
+        const data = await request(`/blog/find/${id}`, 'GET', {headersw:options })
         setBlogDetails(data)
         setTitle(data.title)
         setDesc(data.desc)

@@ -272,7 +272,7 @@ const BlogDetails = () => {
   const handleLikePost = async () => {
     try {
       const options = { authorization: `Bearer ${token}` };
-      await axios.put(`http://localhost:5000/blog/likeBlog/${id}`, {headers:options});
+      await axios.put(`https://backendforblog-vdq1.onrender.com/blog/likeBlog/${id}`, {headers:options});
       setIsLiked((prev) => !prev);
     } catch (error) {
       console.error(error);
@@ -300,7 +300,7 @@ const BlogDetails = () => {
           Go Back <AiOutlineArrowRight />
         </Link>
         <div className={classes.wrapper}>
-          <img src={`http://localhost:5000/images/${blogDetails?.photo}`} alt={blogDetails?.title} />
+          <img src={`https://backendforblog-vdq1.onrender.com/images/${blogDetails?.photo}`} alt={blogDetails?.title} />
           <div className={classes.titleAndControls}>
             <h3 className={classes.title}>{blogDetails?.title}</h3>
             {blogDetails?.userId?._id === user._id  && user1isAdmin? (
