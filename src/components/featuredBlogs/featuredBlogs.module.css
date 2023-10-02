@@ -1,0 +1,160 @@
+.container{
+    margin-top: 3rem;
+    height:100%;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.wrapper{
+    max-width: 1180px;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.wrapper > h3{
+    margin-bottom: 1.5rem;
+    font-size: 28px;
+    color: #222;
+    font-weight: bold;
+}
+
+.wrapper > .blogs{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+/* left */
+.left{
+    
+    height: 100%;
+    display: inline-flex;
+}
+
+.left > .mainBlog{
+    height: 100%;
+    position: relative;
+}
+
+.left > .mainBlog > a > img{
+    height: 35%;
+    width: 90%;
+    object-fit: cover;
+    position: relative;
+}
+
+.categoryAndMetadata{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.category{
+    border: 1px solid #fff;
+    border-radius: 12px;
+    padding: 0.25rem 1.25rem;
+}
+
+.metadata{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.left > .mainBlog > .mainBlogData{
+    position: absolute;
+    bottom: 2.5rem;
+    color: #fff;
+    padding: 0 1rem;
+}
+
+.left > .mainBlog > .mainBlogData > h4{
+    font-size: 32px;
+    margin-bottom: 0.75rem;
+}
+
+.blogDesc{
+    font-size: 18px;
+    color: #e2dede;
+    margin-bottom: 1rem;
+}
+
+.authorAndCreatedAt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left > .mainBlog > .mainBlogData > .authorAndCreatedAt > span > span{
+    font-size: 17px;
+    color: #efefef;
+    font-weight: bold;
+}
+
+/* right */
+.right{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.right > .secondaryBlog{
+    height: 50%;
+    width: 100%;
+    position: relative;
+}
+
+.right > .secondaryBlog > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.secondaryBlogData{
+    width: 100%;
+    position: absolute;
+    bottom: 2.5rem;
+    padding: 0 1rem;
+}
+
+.secondaryBlogData > h4{
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.secondaryBlogData > .desc{
+    color: #fff;
+    max-width: 275px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 1.25rem 0;
+} 
+
+/* Add this to your CSS file */
+.carousel {
+    width: 100%; 
+    height: 700px;
+    max-width: 800px; /* Set a maximum width if necessary */
+    margin: 0 auto; /* Center the slider on the page */
+    overflow: hidden; /* Hide overflowing content */
+    background-color: #f7f7f7; /* Set background color */
+    border: 1px solid #ccc; /* Add border for visual separation */
+    border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for depth */
+  }
+  .carousel > img{
+    
+    
+  }
+  
+  

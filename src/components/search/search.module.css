@@ -1,0 +1,18 @@
+
+.container1{
+    
+    background:url('https://cdn.pixabay.com/photo/2013/04/04/12/34/mountains-100367_640.jpg');
+    object-fit: cover;
+    height: 400px;
+   width: 100%;
+    margin-top: 0px;   
+    position:static;
+    
+}  
+.text{
+     color: rgb(255, 255, 255);
+     padding-top: 100px;
+     padding-left: 55px;
+     padding-right: 55px;
+     font-weight: bold;
+}
